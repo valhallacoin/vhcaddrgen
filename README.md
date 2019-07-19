@@ -1,11 +1,11 @@
-dcraddrgen
+vhcaddrgen
 ====
 
-[![Build Status](https://travis-ci.org/decred/dcraddrgen.png?branch=master)](https://travis-ci.org/decred/dcraddrgen)
-[![GoDoc](https://godoc.org/github.com/decred/dcraddrgen?status.png)](http://godoc.org/github.com/decred/dcraddrgen)
+[![Build Status](https://travis-ci.org/valhallacoin/vhcaddrgen.png?branch=master)](https://travis-ci.org/valhallacoin/vhcaddrgen)
+[![GoDoc](https://godoc.org/github.com/valhallacoin/vhcaddrgen?status.png)](http://godoc.org/github.com/valhallacoin/vhcaddrgen)
 
 
-dcraddrgen is a simple offline address generator for [decred](https://decred.org/).
+vhcaddrgen is a simple offline address generator for [valhallacoin](https://valhallacoin.org/).
 
 It allows one to generate an address (along with either the private
 key or a wallet seed) without a running wallet or daemon.
@@ -27,31 +27,31 @@ For a first time installation, the project and dependency sources can be
 obtained manually with `git` and `dep` (create directories as needed):
 
 ```
-git clone https://github.com/decred/dcraddrgen $GOPATH/src/github.com/decred/dcraddrgen
-cd $GOPATH/src/github.com/decred/dcraddrgen
+git clone https://github.com/valhallacoin/vhcaddrgen $GOPATH/src/github.com/valhallacoin/vhcaddrgen
+cd $GOPATH/src/github.com/valhallacoin/vhcaddrgen
 ```
 
 To update an existing source tree, pull the latest changes and install the
 matching dependencies:
 
 ```
-cd $GOPATH/src/github.com/decred/dcraddrgen
+cd $GOPATH/src/github.com/valhallacoin/vhcaddrgen
 git pull
 ```
 
 **Building/Installing**:
 
 The `go` tool is used to build or install (to `GOPATH`) the project.  Some
-example build instructions are provided below (all must run from the `dcraddrgen`
+example build instructions are provided below (all must run from the `vhcaddrgen`
 project directory).
 
-To build a `dcraddrgen` executable and install it to `$GOPATH/bin/`:
+To build a `vhcaddrgen` executable and install it to `$GOPATH/bin/`:
 
 ```
 go install
 ```
 
-To build a `dcraddrgen` executable and place it in the current directory:
+To build a `vhcaddrgen` executable and place it in the current directory:
 
 ```
 go build
@@ -60,8 +60,8 @@ go build
 ## Usage
 
 ```
-Usage: dcraddrgen [-testnet] [-simnet] [-regtest] [-noseed] [-h] filename
-Generate a Decred private and public key or wallet seed.
+Usage: vhcaddrgen [-testnet] [-simnet] [-regtest] [-noseed] [-h] filename
+Generate a Valhalla private and public key or wallet seed.
 These are output to the file 'filename'.
 
   -h 		    Print this message

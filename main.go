@@ -16,12 +16,12 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/decred/dcrd/chaincfg"
-	"github.com/decred/dcrd/dcrec"
-	"github.com/decred/dcrd/dcrec/secp256k1"
-	"github.com/decred/dcrd/dcrutil"
-	"github.com/decred/dcrd/hdkeychain"
-	"github.com/decred/dcrwallet/walletseed"
+	"github.com/valhallacoin/vhcd/chaincfg"
+	"github.com/valhallacoin/vhcd/vhcec"
+	"github.com/valhallacoin/vhcd/vhcec/secp256k1"
+	"github.com/valhallacoin/vhcd/vhcutil"
+	"github.com/valhallacoin/vhcd/hdkeychain"
+	"github.com/valhallacoin/vhcwallet/walletseed"
 )
 
 // The hierarchy described by BIP0043 is:
@@ -110,15 +110,15 @@ func generateKeyPair(filename string) error {
 		D:         key.D,
 	}
 
-	addr, err := dcrutil.NewAddressPubKeyHash(
-		dcrutil.Hash160(pub.SerializeCompressed()),
+	addr, err := vhcutil.NewAddressPubKeyHash(
+		vhcutil.Hash160(pub.SerializeCompressed()),
 		&params,
-		dcrec.STEcdsaSecp256k1)
+		vhcec.STEcdsaSecp256k1)
 	if err != nil {
 		return err
 	}
 
-	privWif, err := dcrutil.NewWIF(priv, &params, dcrec.STEcdsaSecp256k1)
+	privWif, err := vhcutil.NewWIF(priv, &params, vhcec.STEcdsaSecp256k1)
 	if err != nil {
 		return err
 	}
@@ -465,8 +465,8 @@ func main() {
 	}
 	helpMessage := func() {
 		fmt.Println(
-			"Usage: dcraddrgen [-testnet] [-simnet] [-noseed] [-verify] [-h] filename")
-		fmt.Println("Generate a Decred private and public key or wallet seed. \n" +
+			"Usage: vhcaddrgen [-testnet] [-simnet] [-noseed] [-verify] [-h] filename")
+		fmt.Println("Generate a Valhalla private and public key or wallet seed. \n" +
 			"These are output to the file 'filename'.\n")
 		fmt.Println("  -h \t\tPrint this message")
 		fmt.Println("  -testnet \tGenerate a testnet key instead of mainnet")
