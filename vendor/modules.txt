@@ -1,0 +1,24 @@
+# github.com/agl/ed25519 v0.0.0-20170116200512-5312a6153412
+github.com/agl/ed25519
+github.com/agl/ed25519/edwards25519
+# github.com/dchest/blake256 v1.0.0
+github.com/dchest/blake256
+# github.com/decred/base58 v1.0.0
+github.com/decred/base58
+# github.com/valhallacoin/vhcd v0.0.0-20190717141011-f2512c8adc05
+github.com/valhallacoin/vhcd/chaincfg
+github.com/valhallacoin/vhcd/hdkeychain
+github.com/valhallacoin/vhcd/vhcec
+github.com/valhallacoin/vhcd/vhcec/secp256k1
+github.com/valhallacoin/vhcd/vhcutil
+github.com/valhallacoin/vhcd/chaincfg/chainhash
+github.com/valhallacoin/vhcd/wire
+github.com/valhallacoin/vhcd/chaincfg/chainec
+github.com/valhallacoin/vhcd/vhcec/edwards
+github.com/valhallacoin/vhcd/vhcec/secp256k1/schnorr
+# github.com/valhallacoin/vhcwallet v0.0.0-20190717144001-459179017e28
+github.com/valhallacoin/vhcwallet/walletseed
+github.com/valhallacoin/vhcwallet/errors
+github.com/valhallacoin/vhcwallet/pgpwordlist
+# golang.org/x/crypto v0.0.0-20190701094942-4def268fd1a4
+golang.org/x/crypto/ripemd160

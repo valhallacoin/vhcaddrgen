@@ -17,10 +17,10 @@ import (
 	"strings"
 
 	"github.com/valhallacoin/vhcd/chaincfg"
+	"github.com/valhallacoin/vhcd/hdkeychain"
 	"github.com/valhallacoin/vhcd/vhcec"
 	"github.com/valhallacoin/vhcd/vhcec/secp256k1"
 	"github.com/valhallacoin/vhcd/vhcutil"
-	"github.com/valhallacoin/vhcd/hdkeychain"
 	"github.com/valhallacoin/vhcwallet/walletseed"
 )
 
@@ -505,7 +505,7 @@ func main() {
 			fmt.Println("Error: Only specify one network.")
 			return
 		}
-		params = chaincfg.TestNet3Params
+		params = chaincfg.TestNetParams
 	}
 	if *simnet {
 		params = chaincfg.SimNetParams
